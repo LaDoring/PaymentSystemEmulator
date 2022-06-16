@@ -1,0 +1,19 @@
+{{ define "last_check" }}
+{{ template "header" }}
+
+<body class="text-center" cz-shortcut-listen="true">
+    <main class="form-signin w-100 m-auto">
+      <form action="/show_last_check/" method="post">
+        <h1 class="h3 mb-3 fw-normal">Вывести статус последнего платежа</h1>
+        <p>Введите Ваш id </p>
+        <div class="form-floating">
+            <input type="id_user" class="form-control" name="id_user" id="id_user" placeholder="10083652">
+            <label for="floatingInput">Ваш id</label>
+          </div>
+        <br><button class="w-100 btn btn-lg btn-primary" type="submit" ><a href="/show_last_check"></a>Узнать</button><br><br>
+        <p class="mt-5 mb-3 text-muted">©CONSTANTA  2016–2022</p>
+      </form>
+    </main>
+
+</body>
+{{ end }}

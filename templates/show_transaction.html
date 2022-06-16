@@ -1,0 +1,18 @@
+{{ define "show_transaction" }}
+{{ template "header" }}
+
+    <p>Вот, что мы нашли по Вашему запросу</p>
+    {{ range . }}
+    <div class="alert alert-secondary">
+        <h2>{{ .Amount }} {{ .Currency }}</h2>
+        <p>{{ .Status }}</p>
+        <p>Дата и время создания: {{ .Dt_create }}</p>
+    </div>
+    {{ else }}
+    <p class="lead">Платежей нет</p>
+    {{ end }}
+
+    
+    <p class="mt-5 mb-3 text-muted">©CONSTANTA  2016–2022</p>
+
+{{ end }}

@@ -1,0 +1,45 @@
+{{ define "home_page" }}
+{{ template "header" }}
+
+<body class="text-center" cz-shortcut-listen="true">
+    <main class="form-signin w-100 m-auto">
+      <form action="/save_data/" method="post">
+        <h1 class="h3 mb-3 fw-normal">Оформление платежа</h1>
+        <div class="form-floating">
+            <input type="id_user" class="form-control" name="id_user" id="id_user" placeholder="10083652">
+            <label for="floatingInput">Ваш id</label>
+          </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+          <label for="floatingEmail">Ваш E-mail</label>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-floating" >
+                    <input type="amount" class="form-control" name="amount" id="amount" placeholder="1500">
+                    <label for="floatingInput">Введите сумму</label>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-floating">
+                    <select class="form-select" name="currency" id="currency">
+                        <option selected>Выбрать</option>
+                        <option value="USD ($)">USD ($)</option>
+                        <option value="EUR (€)">EUR (€)</option>
+                        <option value="RUB (₽)">RUB (₽)</option>
+                    </select>
+                    <label for="floatingSelect">Валюта</label>
+                </div>
+            </div>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit" ><a href="/save_data"></a>Подтвердить</button><br><br>
+      </form>
+        <p class="mt-5 mb-3 text-muted">©CONSTANTA 2016–2022</p>
+
+    </main>
+
+</body>
+</html>
+
+{{ end }}    
