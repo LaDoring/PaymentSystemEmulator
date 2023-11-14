@@ -9,7 +9,7 @@ There are several things I direct for **all developers** for the moment.
 1. Clone the project from GitHub (*Windows compatibility*):
 
 ```
-git clone --recursive -j8 https://github.com/LaDoring/PaymentSystemEmulator
+git clone --recursive -j8 https://github.com/dorochka8/PaymentSystemEmulator
 ```
 2. Adjust configuration parameters:
 - Modify the values in localhost, login and password data in main.go
