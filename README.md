@@ -1,6 +1,6 @@
 # PaymentSystemEmulator
 
-I welcome everyone to use my source code to create own Weather Bot.
+I welcome everyone to use my source code to create own Payment System on GoLang
 
 There are several things I direct for **all developers** for the moment.
 
